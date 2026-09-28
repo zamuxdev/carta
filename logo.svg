@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">TecnoSoluciones</title>
+  <desc id="desc">Monograma TS de trazos geométricos</desc>
+  <rect width="96" height="96" rx="21" fill="#112d3a"/>
+  <path d="M17 27h38M36 27v42" fill="none" stroke="#f8f5ee" stroke-width="7" stroke-linecap="square"/>
+  <path d="M77 33c-4-5-10-7-16-7-9 0-15 5-15 12 0 7 6 10 15 12 10 2 16 5 16 12 0 8-7 13-17 13-6 0-12-2-17-7" fill="none" stroke="#e9a954" stroke-width="7" stroke-linecap="square"/>
+  <path d="M18 78h13" stroke="#e9a954" stroke-width="4" stroke-linecap="square"/>
+</svg>

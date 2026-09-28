@@ -1,0 +1,153 @@
+:root {
+  --tinta: #17323d;
+  --tinta-fuerte: #112d3a;
+  --cobre: #a96327;
+  --cobre-claro: #e9a954;
+  --papel: #fffefa;
+  --fondo: #edf0ed;
+  --gris: #637178;
+  --linea: #dce2df;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 44px 20px;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+[hidden] { display: none !important; }
+
+.carta, .sin-carta {
+  width: min(100%, 840px);
+  margin: 0 auto;
+  background: var(--papel);
+  box-shadow: 0 18px 60px rgba(17, 45, 58, .1);
+}
+
+.carta { border-top: 7px solid var(--tinta-fuerte); }
+
+.encabezado {
+  min-height: 132px;
+  padding: 28px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid var(--linea);
+}
+
+.marca { display: flex; align-items: center; gap: 18px; min-width: 0; }
+.marca img { width: 62px; height: 62px; flex: none; }
+.marca-texto { min-width: 0; }
+.marca-nombre {
+  margin: 0;
+  color: var(--tinta-fuerte);
+  font-size: 1.24rem;
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1.2;
+}
+.marca-eslogan { margin: 7px 0 0; color: var(--gris); font-size: .77rem; letter-spacing: .025em; }
+.encabezado-detalle { color: #e5eae7; font-size: 3.1rem; font-weight: 700; letter-spacing: -.11em; line-height: 1; }
+.detalle-punto { color: var(--cobre-claro); }
+
+.contenido { padding: 52px 100px 64px; }
+.intro { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.etiqueta {
+  margin: 0;
+  color: var(--cobre);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.fecha { margin: 0; color: var(--gris); font-size: .78rem; text-align: right; }
+.destinatario { display: flex; gap: 24px; margin-top: 51px; padding-bottom: 24px; border-bottom: 1px solid var(--linea); }
+.destinatario-etiqueta { width: 48px; flex: none; padding-top: 4px; color: var(--cobre); font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
+.destinatario p { margin: 2px 0; color: var(--gris); font-size: .87rem; line-height: 1.5; }
+.destinatario .destinatario-nombre { margin: 0 0 5px; color: var(--tinta-fuerte); font-size: 1rem; font-weight: 700; }
+
+.contenido h1 {
+  margin: 42px 0 15px;
+  color: var(--tinta-fuerte);
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 3.55rem);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.08;
+}
+.contenido h1 em { color: var(--cobre); font-weight: 400; }
+.acento { width: 43px; height: 3px; margin: 24px 0 29px; background: var(--cobre-claro); }
+#mensaje p { margin: 0 0 18px; color: #354952; font-size: .96rem; line-height: 1.82; }
+#mensaje p:last-child { margin-bottom: 0; }
+
+.remitente { margin-top: 46px; }
+.remitente p { margin: 0; }
+.despedida { color: var(--gris); font-size: .87rem; }
+.firma { margin: 8px 0 0 !important; color: var(--tinta); font-family: "Dancing Script", cursive; font-size: 2.45rem; line-height: 1.2; }
+.firma-linea { width: 200px; height: 1px; margin: 13px 0 12px; background: var(--linea); }
+.remitente-nombre { color: var(--tinta-fuerte); font-size: .83rem; font-weight: 700; }
+.remitente-puesto { margin-top: 3px !important; color: var(--gris); font-size: .8rem; }
+
+.pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 25px 64px;
+  background: var(--tinta-fuerte);
+  color: #d5e1df;
+}
+.pie-marca { display: flex; align-items: center; gap: 11px; flex: none; font-size: .76rem; font-weight: 700; }
+.pie-icono { color: var(--papel); font-size: 1.45rem; font-weight: 700; letter-spacing: -.13em; }
+.pie-icono span { color: var(--cobre-claro); }
+.pie-info { max-width: 445px; text-align: right; }
+.pie-info p { margin: 2px 0; font-size: .7rem; line-height: 1.55; }
+.separador { padding: 0 8px; color: var(--cobre-claro); }
+
+.sin-carta { min-height: 490px; padding: 75px 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-top: 7px solid var(--tinta-fuerte); }
+.sin-carta img { width: 76px; height: 76px; margin-bottom: 24px; }
+.sin-carta h2 { max-width: 460px; margin: 20px 0 8px; font-family: "DM Serif Display", Georgia, serif; font-size: 2.25rem; font-weight: 400; line-height: 1.15; }
+.sin-carta > p:last-child { margin: 0; color: var(--gris); font-size: .9rem; }
+
+@media (max-width: 700px) {
+  body { padding: 16px; }
+  .encabezado { min-height: 105px; padding: 22px 30px; }
+  .contenido { padding: 38px 38px 48px; }
+  .pie { padding: 25px 30px; }
+  .encabezado-detalle { display: none; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 0; background: var(--papel); }
+  .carta, .sin-carta { box-shadow: none; }
+  .encabezado { padding: 22px 24px; }
+  .marca { gap: 12px; }
+  .marca img { width: 49px; height: 49px; }
+  .marca-nombre { font-size: 1.05rem; }
+  .marca-eslogan { font-size: .68rem; }
+  .contenido { padding: 38px 26px 50px; }
+  .intro { display: block; }
+  .fecha { margin-top: 9px; text-align: left; }
+  .destinatario { gap: 14px; margin-top: 37px; }
+  .destinatario-etiqueta { width: 40px; }
+  .contenido h1 { margin-top: 36px; font-size: 2.6rem; }
+  .pie { display: block; padding: 28px 26px; }
+  .pie-info { margin-top: 15px; text-align: left; }
+  .pie-info p:last-child span:not(.separador) { display: block; white-space: nowrap; }
+  .separador { display: none; }
+}
+
+@media print {
+  @page { size: A4; margin: 0; }
+  body { padding: 0; background: white; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .carta { width: 100%; min-height: 297mm; box-shadow: none; }
+  .contenido { min-height: 233mm; }
+  .sin-carta { box-shadow: none; }
+}

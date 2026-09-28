@@ -1,0 +1,27 @@
+{
+  "empresa": {
+    "nombre": "TecnoSoluciones S.A. de C.V.",
+    "logo": "logo.svg",
+    "eslogan": "Innovación que impulsa tu futuro",
+    "direccion": "Av. Reforma 123, Col. Centro, Ciudad de México, C.P. 06000",
+    "telefono": "(55) 1234 5678",
+    "correo": "contacto@tecnosoluciones.com",
+    "web": "www.tecnosoluciones.com"
+  },
+  "destinatario": {
+    "nombre": "Ana María López García",
+    "puesto": "Desarrolladora Web Junior",
+    "departamento": "Departamento de Tecnologías de la Información",
+    "fechaIngreso": "29 de septiembre de 2026"
+  },
+  "mensaje": [
+    "Es un placer darte la más cordial bienvenida a TecnoSoluciones. A partir de hoy formas parte del Departamento de Tecnologías de la Información, un equipo comprometido con la innovación y la excelencia.",
+    "Estamos seguros de que tus conocimientos, entusiasmo y talento serán de gran valor para alcanzar nuestros objetivos. Aquí encontrarás un ambiente de colaboración, aprendizaje constante y crecimiento profesional.",
+    "Cualquier duda que tengas, no dudes en acercarte a tus compañeros o directamente conmigo. ¡Te deseamos mucho éxito en esta nueva etapa!"
+  ],
+  "remitente": {
+    "nombre": "Ing. Carlos Ramírez Torres",
+    "puesto": "Gerente del Departamento de TI",
+    "firma": "Carlos Ramírez"
+  }
+}

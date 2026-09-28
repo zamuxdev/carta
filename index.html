@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de bienvenida · TecnoSoluciones</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="sin-carta" id="sinCarta">
+    <img src="logo.svg" alt="TecnoSoluciones">
+    <p class="etiqueta">TecnoSoluciones</p>
+    <h2>No hay carta de bienvenida disponible</h2>
+    <p>Por el momento no hay ninguna carta para mostrar.</p>
+  </main>
+
+  <main class="carta" id="carta" hidden>
+    <header class="encabezado">
+      <div class="marca">
+        <img id="logo" src="logo.svg" alt="">
+        <div class="marca-texto">
+          <p class="marca-nombre" id="nombreEmpresa"></p>
+          <p class="marca-eslogan" id="eslogan"></p>
+        </div>
+      </div>
+      <span class="encabezado-detalle" aria-hidden="true">TS<span class="detalle-punto">.</span></span>
+    </header>
+
+    <section class="contenido">
+      <div class="intro">
+        <p class="etiqueta">Una nueva etapa comienza</p>
+        <p class="fecha" id="fecha"></p>
+      </div>
+
+      <div class="destinatario">
+        <span class="destinatario-etiqueta">Para</span>
+        <div>
+          <p class="destinatario-nombre" id="destNombre"></p>
+          <p id="destPuesto"></p>
+          <p id="destDepartamento"></p>
+        </div>
+      </div>
+
+      <h1>¡Qué gusto tenerte en el <em>equipo!</em></h1>
+      <div class="acento" aria-hidden="true"></div>
+      <div id="mensaje"></div>
+
+      <div class="remitente">
+        <p class="despedida">Con aprecio,</p>
+        <p class="firma" id="firma"></p>
+        <div class="firma-linea"></div>
+        <p class="remitente-nombre" id="remNombre"></p>
+        <p class="remitente-puesto" id="remPuesto"></p>
+      </div>
+    </section>
+
+    <footer class="pie">
+      <div class="pie-marca">
+        <span class="pie-icono" aria-hidden="true">T<span>S</span></span>
+        <span id="pieNombre"></span>
+      </div>
+      <div class="pie-info">
+        <p id="pieDireccion"></p>
+        <p><span id="pieTelefono"></span><span class="separador" aria-hidden="true">·</span><span id="pieCorreo"></span><span class="separador" aria-hidden="true">·</span><span id="pieWeb"></span></p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

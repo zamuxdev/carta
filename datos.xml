@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carta>
+  <empresa>
+    <nombre>TecnoSoluciones S.A. de C.V.</nombre>
+    <logo>logo.svg</logo>
+    <eslogan>Innovación que impulsa tu futuro</eslogan>
+    <direccion>Av. Reforma 123, Col. Centro, Ciudad de México, C.P. 06000</direccion>
+    <telefono>(55) 1234 5678</telefono>
+    <correo>contacto@tecnosoluciones.com</correo>
+    <web>www.tecnosoluciones.com</web>
+  </empresa>
+  <destinatario>
+    <nombre>Diego Fernández Morales</nombre>
+    <puesto>Analista de Datos</puesto>
+    <departamento>Área de Inteligencia de Negocios</departamento>
+    <fechaIngreso>5 de octubre de 2026</fechaIngreso>
+  </destinatario>
+  <mensaje>
+    <parrafo>Diego, nos alegra darte la bienvenida al Área de Inteligencia de Negocios. Tu experiencia analizando información nos ayudará a convertir los datos en decisiones útiles para nuestros clientes y equipos.</parrafo>
+    <parrafo>En tus primeras semanas conocerás los proyectos, las herramientas y a las personas con quienes trabajarás. Queremos que compartas tus ideas desde el primer día: tu perspectiva será valiosa para seguir mejorando.</parrafo>
+    <parrafo>Cuenta conmigo y con todo el equipo para resolver dudas y encontrar apoyo. Te deseamos un gran comienzo en TecnoSoluciones.</parrafo>
+  </mensaje>
+  <remitente>
+    <nombre>Lic. Mariana Herrera Ruiz</nombre>
+    <puesto>Directora de Inteligencia de Negocios</puesto>
+    <firma>Mariana Herrera</firma>
+  </remitente>
+</carta>
