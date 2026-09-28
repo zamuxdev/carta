@@ -2,7 +2,7 @@
 //   ""     -> no hay carta (se muestra la vista "sin carta")
 //   "json" -> carga la carta desde datos.json
 //   "xml"  -> carga la carta desde datos.xml
-const FUENTE = "";
+const FUENTE = "json";
 
 // Coloca el texto en el elemento con el id indicado
 function poner(id, texto) {
